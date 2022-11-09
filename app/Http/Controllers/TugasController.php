@@ -52,7 +52,7 @@ class TugasController extends Controller
         $model->harga = $request->harga;
         $model->save();
 
-        return redirect('tugas');
+        return redirect('tugas')->with('success', 'Berhasil Menambahkan Tugas!');
     }
 
     /**

@@ -4,13 +4,32 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Http\Requests\UserRequest;
 
 class UserController extends Controller
 {
 
     public function logIn()
     {
-        return view('user.logIn');
+        $model = User::all();
+
+        return view('user.logIn', compact(
+            'model'
+        ));
+    }
+
+    public function logInPost(UserRequest $request)
+    {
+
+        return $request->username;
+        // $model = User::all();
+
+        // if ($model->username == $request->username && $model->password == $request->password) {
+        //     return view('home.home_main');
+        // } else {
+        //     return redirect('logIn');
+        // }
+
     }
 
     /**
@@ -43,7 +62,7 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
         $model = new User;
         $model->username = $request->username;
@@ -52,9 +71,9 @@ class UserController extends Controller
         $model->fakultas = $request->fakultas;
         $model->jurusan = $request->jurusan;
         $model->password = $request->password;
-        $model->save();
+        $model->save(); 
 
-        return redirect('home_main');
+        return redirect('home_main')->with('success', 'Account Berhasil Dibuat!');
     }
 
     /**
@@ -90,7 +109,7 @@ class UserController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, $id)
     {
         //
     }

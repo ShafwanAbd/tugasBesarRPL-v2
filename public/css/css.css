@@ -103,6 +103,14 @@
     padding: 0 15vw;
 }
 
+.signup .error {
+    background-color: #FFC5C5;
+    padding: 0.25rem 1rem;
+    border-radius: 2rem;
+    margin-left: 11vw;
+    margin-top: -2.5vh;
+}
+
 .signup h1 {
     font-size: clamp(50px, 6vw, 70px);
     text-align: center;
@@ -112,7 +120,7 @@
 }
 
 .signup .col {
-    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .signup .col h3 {
@@ -126,9 +134,8 @@
     border-radius: 50px;
 }
 
-.signup p {
+.signup .sk {
     margin-left: 13vw;
-    margin-top: 3vh;
     color: #2AA7DC;
     text-decoration: none;
 }
@@ -139,6 +146,7 @@
     position: relative;
     font-size: clamp(20px, 2vw, 75px);
     margin-top: 5vh;
+    margin-bottom: 10vh;
     background-color: #2FC1FF;
     border-radius: 50px;
     width: 25vw;
@@ -313,6 +321,20 @@
     margin-top: -1vh;
 }
 
+.hidden {
+    display: none;
+}
+
+.home_main .alert {
+    background-color: #C5FFCB;
+    z-index: 1;
+    font-weight: 650;
+    text-align: center;
+    width: 50vw;
+    position: fixed;
+    margin: 10vh 25vw;
+}
+
 .home_main .carousel-item img {
     object-fit: cover;
     height: 60vh;
@@ -479,10 +501,15 @@
 }
 
 .cariTugas .right-side .item {
+    padding: 0.5vw;
     display: flex;
     border-radius: 1rem;
     background-color: #C5EEFF;
     margin-bottom: 2vh;
+}
+
+.cariTugas .right-side .alert {
+    font-weight: 650;
 }
 
 .cariTugas .right-side .item img {

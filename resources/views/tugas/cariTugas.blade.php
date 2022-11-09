@@ -17,7 +17,10 @@
             <div class="col w">
                 <div class="right-side">
                 <h1 class="judul">Cari Tugas</h1>
-
+                @if(Session::has('success'))
+                <p class="alert alert-success" id="sixSeconds">{{ Session::get('success') }}</p>
+                @endif
+                
                 @foreach($datas as $key=>$value)
                 <a href="{{ url('tugas/'.$value->id) }}">
                     <div class="item hover-zoom">

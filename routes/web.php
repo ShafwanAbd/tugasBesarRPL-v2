@@ -11,6 +11,7 @@ Route::get('/', function () {
 
 
 Route::get('/logIn', [UserController::class, 'logIn']);
+Route::post('/logIn', [UserController::class, 'logInPost']);
 
 Route::get('/home', [TubesController::class, 'home']);
 Route::get('/home_main', [TubesController::class, 'home_main']);

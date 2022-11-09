@@ -13,25 +13,32 @@
 <body>
 <div class="login">
         <h1>Log In</h1>
-        <form >
+        <form method="POST" action="{{ url('logIn') }}">
+            @csrf
+                    @foreach($errors->get('username') as $msg)
+                        <p class="text-danger error">{{ $msg }}</p>
+                    @endforeach
             <div class="row g-3">
                 <div class="col">
                     <h3>Username</h3>
                 </div>
                 <div class="col">
-                    <input type="text" id="username" name="username" class="form-control" placeholder="Write Your Username ...">
+                    <input type="text" name="username" class="form-control" placeholder="Write Your Username ...">
                 </div>
             </div>
+                    @foreach($errors->get('password') as $msg)
+                        <p class="text-danger error">{{ $msg }}</p>
+                    @endforeach
             <div class="row g-3">
                 <div class="col">
                     <h3>Password</h3>
                 </div>
                 <div class="col">
-                    <input type="password" id="password" name="password" class="form-control" placeholder="Write Your Password ...">
+                    <input type="password" name="password" class="form-control" placeholder="Write Your Password ...">
                 </div>
             </div>
             <a href="{{ 'signUp' }}">Create an Account</a>
-            <button type="submit" name="create" class="btn">Submit</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </div>
 </body>
