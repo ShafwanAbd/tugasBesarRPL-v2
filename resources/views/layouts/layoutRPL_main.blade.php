@@ -25,9 +25,9 @@
     <div class="collapse navbar-collapse" id="navbarMenuRPL">
         <div class="navbar-nav">
             <a class="nav-link active hover-shadow" href="{{ url('home_main') }}">Home</a>
-            <a class="nav-link hover-shadow dropdown" href="{{ url('home_main') }}">Tugas</a>
-            <a class="nav-link hover-shadow" href="{{ url('home_main') }}">Profile</a>
-            <a class="hover-shadow" href="{{ url('login') }}"><img src="{{ asset('img/login_icon.png') }}"></a>
+            <a class="nav-link hover-shadow dropdown" href="{{ url('tugas') }}">Tugas</a>
+            <a class="nav-link hover-shadow" href="{{ url('user') }}">Profile</a>
+            <a class="hover-shadow" href="{{ url('logIn') }}"><img src="{{ asset('img/login_icon.png') }}"></a>
         </div>
     </div>
 </nav>
@@ -37,4 +37,9 @@
         @yield('content')
     </div>
 </body>
+<footer>
+    <div class="isi">
+        <p>Created by Muhammad Shafwan Abdullah & Zulfan Syahidan Alfarra</p>
+    </div>
+</footer>
 </html>

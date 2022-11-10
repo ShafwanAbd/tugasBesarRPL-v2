@@ -2,7 +2,9 @@
 
 @section('content')
     <div class="home_main">
-        <p class="alert alert-success" id="sixSeconds">Account Berhasil Dibuat!</p>
+        @if(Session::has('success'))
+        <p class="alert alert-success" id="sixSeconds">{{ Session::get('success') }}</p>
+        @endif
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -34,30 +36,54 @@
 
         <h2 class="title-jurusan">Jurusan Tugas</h2>
         <div class="jurusanTugas">
-            <div class="container">
+            <div class="row">
                 <div class="item">
-                    <div class="q">
-                        <img src="./img/img1.png">
-                    </div>
-                    <h4>Jurusan Tugas</h4>
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
                 </div>
                 <div class="item">
-                    <div class="q">
-                        <img src="./img/img1.png">
-                    </div>
-                    <h4>Jurusan Tugas</h4>
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
                 </div>
                 <div class="item">
-                    <div class="q">
-                        <img src="./img/img1.png">
-                    </div>
-                    <h4>Jurusan Tugas</h4>
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
                 </div>
                 <div class="item">
-                    <div class="q">
-                        <img src="./img/img1.png">
-                    </div>
-                    <h4>Jurusan Tugas</h4>
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
+                </div>
+                <div class="item">
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
+                </div>
+                <div class="item">
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
+                </div>
+                <div class="item">
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
+                </div>
+                <div class="item">
+                        <div class="q">
+                            <img src="./img/img1.png">
+                        </div>
+                        <h4>Jurusan Tugas</h4>
                 </div>
             </div>
         </div>

@@ -44,6 +44,23 @@
 }
 
 
+/** FOOTER **/
+
+footer {
+    color: white;
+    width: 100%;
+    margin-top: 20vh;
+    height: 10vh;
+    background-color: #00577B;
+}
+
+footer .isi {
+    margin-top: 2vh;
+    margin-right: 5vw;
+    float: right;
+}
+
+
 /**  USER  **/
 
 
@@ -354,7 +371,6 @@
 }
 
 .home_main .jurusanTugas {
-    padding: 2rem;
     margin-top: 5vh;
     color: #006E9C;
     margin-left: 10vw;
@@ -364,12 +380,9 @@
 }
 
 .home_main .jurusanTugas .item {
-    width: 100%;
-}
-
-.home_main .jurusanTugas .item .q {
-    width: 100%;
-    height: 30vh;
+    width: 20%;
+    float: left;
+    margin: 2.5%;
 }
 
 .home_main .jurusanTugas .item img {
@@ -476,6 +489,25 @@
 
 .cariTugas .left-side .item {
     margin-top: 3vh;
+}
+
+.cariTugas .left-side h2 {
+    margin-left: -6vw;
+}
+
+.cariTugas .left-side form {
+    margin-top: 1vh;
+}
+
+.cariTugas .left-side .textinput {
+    padding: 1vh 1vw;
+    border-radius: 50px;
+    border-color: #2FC1FF;
+}
+
+.cariTugas .left-side .buttoninput {
+    background-color: #2AA7DC;
+    border-width: 0;
 }
 
 .cariTugas .right-side {

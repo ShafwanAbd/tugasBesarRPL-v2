@@ -12,10 +12,24 @@ class TugasController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         $datas = Tugas::all();
 
+        if ($request->keywordOwner){
+            $keywordFakultas = $request->keywordFakultas;
+            $datas = Tugas::where('fakultas', 'LIKE', '%'.$keywordFakultas.'%')
+                ->get();
+        } else if ($request->keywordFakultas){
+            $keywordFakultas = $request->keywordFakultas;
+            $datas = Tugas::where('fakultas', 'LIKE', '%'.$keywordFakultas.'%')
+                ->get();
+        } else if ($request->keywordFakultas){
+            $keywordJurusan = $request->keywordJurusan;
+            $datas = Tugas::where('jurusan', 'LIKE', '%'.$keywordJurusan.'%')
+                ->get();
+        }
+        
         return view('tugas.cariTugas', compact(
             'datas'
         ));

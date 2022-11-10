@@ -37,7 +37,7 @@
                     <input type="password" name="password" class="form-control" placeholder="Write Your Password ...">
                 </div>
             </div>
-            <a href="{{ 'signUp' }}">Create an Account</a>
+            <a href="{{ 'user/create' }}">Create an Account</a>
             <button type="submit" class="btn">Submit</button>
         </form>
     </div>
