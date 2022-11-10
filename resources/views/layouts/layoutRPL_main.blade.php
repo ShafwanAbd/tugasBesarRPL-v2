@@ -12,6 +12,7 @@
     <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/javascript.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/navbarHidden.js') }}"></script>
     @yield('style')
     @yield('head')
     <title>Home</title>
@@ -37,9 +38,4 @@
         @yield('content')
     </div>
 </body>
-<footer>
-    <div class="isi">
-        <p>Created by Muhammad Shafwan Abdullah & Zulfan Syahidan Alfarra</p>
-    </div>
-</footer>
 </html>

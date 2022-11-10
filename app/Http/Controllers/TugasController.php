@@ -14,24 +14,34 @@ class TugasController extends Controller
      */
     public function index(Request $request)
     {
-        $datas = Tugas::all();
+        $datas = Tugas::paginate(4);
+
+        $keywordFakultas = "";
+        $keywordJurusan = "";
+        $keywordKategori = "";
 
         if ($request->keywordOwner){
             $keywordFakultas = $request->keywordFakultas;
             $datas = Tugas::where('fakultas', 'LIKE', '%'.$keywordFakultas.'%')
-                ->get();
+                ->paginate(4);
         } else if ($request->keywordFakultas){
             $keywordFakultas = $request->keywordFakultas;
             $datas = Tugas::where('fakultas', 'LIKE', '%'.$keywordFakultas.'%')
-                ->get();
-        } else if ($request->keywordFakultas){
+                ->paginate(4);
+        } else if ($request->keywordJurusan){
             $keywordJurusan = $request->keywordJurusan;
             $datas = Tugas::where('jurusan', 'LIKE', '%'.$keywordJurusan.'%')
-                ->get();
+                ->paginate(4);
+        } else if ($request->keywordKategori){
+            $keywordKategori = $request->keywordKategori;
+            $datas = Tugas::where('kategori', 'LIKE', '%'.$keywordKategori.'%')
+                ->paginate(4);
         }
-        
+        $datas->appends($request->all());
+        $datas->withPath('tugas');
+
         return view('tugas.cariTugas', compact(
-            'datas'
+            'datas', 'keywordFakultas', 'keywordJurusan', 'keywordKategori'
         ));
     }
 

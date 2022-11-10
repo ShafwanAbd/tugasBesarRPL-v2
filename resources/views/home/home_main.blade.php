@@ -13,13 +13,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/img1.png" class="d-block w-100" alt="...">
+                    <img src="./img/imgslide1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/img1.png" class="d-block w-100" alt="...">
+                    <img src="./img/imgslide2.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/img1.png" class="d-block w-100" alt="...">
+                    <img src="./img/imgslide3.png" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -37,56 +37,140 @@
         <h2 class="title-jurusan">Jurusan Tugas</h2>
         <div class="jurusanTugas">
             <div class="row">
-                <div class="item">
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
-                <div class="item">
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
-                <div class="item">
+                        <h4>Teknik Sipil</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
-                <div class="item">
+                        <h4>Teknik Elektro</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
-                <div class="item">
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
-                <div class="item">
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
-                <div class="item">
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
-                <div class="item">
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
                         <div class="q">
-                            <img src="./img/img1.png">
+                            <img src="./img/profile.png">
                         </div>
-                        <h4>Jurusan Tugas</h4>
-                </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+            </div>
+        </div>
+
+        <h2 class="title-jurusan">Kategori Tugas</h2>
+        <div class="jurusanTugas">
+            <div class="row">
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Teknik Sipil</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Teknik Elektro</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                        <div class="q">
+                            <img src="./img/profile.png">
+                        </div>
+                        <h4>Informatika</h4>
+                </a>
             </div>
         </div>
     </div>
+    
+<footer>
+    <div class="isi">
+        <p>Created by Muhammad Shafwan Abdullah & Zulfan Syahidan Alfarra</p>
+    </div>
+</footer>
     
 @endsection

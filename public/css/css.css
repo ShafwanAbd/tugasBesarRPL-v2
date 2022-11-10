@@ -380,9 +380,17 @@ footer .isi {
 }
 
 .home_main .jurusanTugas .item {
-    width: 20%;
+    border-radius: 2vh;
+    text-decoration: none;
+    color: #006E9C;
+    width: 16%;
     float: left;
-    margin: 2.5%;
+    margin: 2%;
+}
+
+.home_main .jurusanTugas .item:hover {
+    margin-top: 1vh;
+    box-shadow: 0 1vh 5px #2FC1FF;
 }
 
 .home_main .jurusanTugas .item img {
@@ -392,8 +400,8 @@ footer .isi {
 
 .home_main .jurusanTugas .item h4 {
     text-align: center;
+    margin-top: 2vh;
     font-size: 1.5rem;
-    padding: 2vh 0;
 }
 
 
@@ -467,7 +475,7 @@ footer .isi {
     margin-top: -1vh;
 }
 
-.cariTugas a {
+.cariTugas .clickItem {
     color: #FFF;
     text-decoration: none;
 }
@@ -478,7 +486,7 @@ footer .isi {
 }
 
 .cariTugas .left-side {
-    padding-top: 10vh;
+    padding-top: 5vh;
     text-align: center;
     color: #FFF;
     background-color: #2AA7DC;
@@ -492,7 +500,7 @@ footer .isi {
 }
 
 .cariTugas .left-side h2 {
-    margin-left: -6vw;
+    margin-left: -3vw;
 }
 
 .cariTugas .left-side form {
@@ -500,7 +508,7 @@ footer .isi {
 }
 
 .cariTugas .left-side .textinput {
-    padding: 1vh 1vw;
+    padding: 0.5vh 1vw;
     border-radius: 50px;
     border-color: #2FC1FF;
 }
@@ -508,6 +516,20 @@ footer .isi {
 .cariTugas .left-side .buttoninput {
     background-color: #2AA7DC;
     border-width: 0;
+}
+
+.cariTugas .left-side .buttoninput img {
+    width: 75%;
+}
+
+.cariTugas .left-side .btn {
+    margin-top: 5vh;
+    color: #FFF;
+    padding: 1vh 2vw;
+    font-weight: 650;
+    font-size: 2rem;
+    border-radius: 50px;
+    background-color: #2FC1FF;
 }
 
 .cariTugas .right-side {
@@ -586,7 +608,13 @@ footer .isi {
     text-shadow: 0 0 5px #FFF;
 }
 
-.dropdown {}
+.margin-5 {
+    margin: 5vh 0;
+}
+
+.margin-10 {
+    margin: 10vh 0;
+}
 
 
 /**  BUAT TUGAS  **/

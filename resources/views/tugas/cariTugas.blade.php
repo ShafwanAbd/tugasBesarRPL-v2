@@ -11,6 +11,7 @@
     <script type="text/javascript" src="{{ asset('js/jquery-3.6.1.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>   
+    <script type="text/javascript" src="{{ asset('js/javascript.js') }}"></script>   
     <title>Home</title>
 </head>
 
@@ -37,19 +38,25 @@
                     <div class="left-side">
                         <h2 class="item hover-shadow">Owner</h2>
                         <form method="GET" action="{{ url('tugas') }}">
-                            <input type="text" name="keywordOwner" class="textinput">
+                            <input type="text" name="keywordOwner" class="textinput" value="{{ $keywordFakultas }}">
                             <button type="submit" class="buttoninput"><img src="{{ asset('./img/search_icon.png') }}"></button>
                         </form>
                         <h2 class="item hover-shadow">Fakultas</h2>
                         <form method="GET" action="{{ url('tugas') }}">
-                            <input type="text" name="keywordFakultas" class="textinput">
+                            <input type="text" name="keywordFakultas" class="textinput" value="{{ $keywordFakultas }}">
                             <button type="submit" class="buttoninput"><img src="{{ asset('./img/search_icon.png') }}"></button>
                         </form>
                         <h2 class="item hover-shadow">Jurusan</h2>
                         <form method="GET" action="{{ url('tugas') }}">
-                            <input type="text" name="keywordJurusan" class="textinput">
+                            <input type="text" name="keywordJurusan" class="textinput" value="{{ $keywordJurusan }}">
                             <button type="submit" class="buttoninput"><img src="{{ asset('./img/search_icon.png') }}"></button>
                         </form>
+                        <h2 class="item hover-shadow">Kategori</h2>
+                        <form method="GET" action="{{ url('tugas') }}">
+                            <input type="text" name="keywordKategori" class="textinput" value="{{ $keywordKategori }}">
+                            <button type="submit" class="buttoninput"><img src="{{ asset('./img/search_icon.png') }}"></button>
+                        </form>
+                        <a class="btn" href="{{ url('tugas/create') }}">Buat Tugas</a>
                     </div>
                 </div>
                 <div class="col w">
@@ -60,7 +67,7 @@
                     @endif
                     
                     @foreach($datas as $key=>$value)
-                    <a href="{{ url('tugas/'.$value->id) }}">
+                    <a class="clickItem" href="{{ url('tugas/'.$value->id) }}">
                         <div class="item hover-zoom">
                             <img src="./img/img1.png">
                             <div class="isi">
@@ -79,14 +86,12 @@
                         </div>
                     </a>
                     @endforeach
+                    <div class="margin-5"></div>
+                    {{ $datas->links() }}
+                    <div class="margin-10"></div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-<footer>
-    <div class="isi">
-        <p>Created by Muhammad Shafwan Abdullah & Zulfan Syahidan Alfarra</p>
-    </div>
-</footer>
 </html>
