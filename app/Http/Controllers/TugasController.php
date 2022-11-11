@@ -14,7 +14,7 @@ class TugasController extends Controller
      */
     public function index(Request $request)
     {
-        $datas = Tugas::paginate(4);
+        $datas = Tugas::paginate(10);
 
         $keywordFakultas = "";
         $keywordJurusan = "";
@@ -23,19 +23,19 @@ class TugasController extends Controller
         if ($request->keywordOwner){
             $keywordFakultas = $request->keywordFakultas;
             $datas = Tugas::where('fakultas', 'LIKE', '%'.$keywordFakultas.'%')
-                ->paginate(4);
+                ->paginate(10);
         } else if ($request->keywordFakultas){
             $keywordFakultas = $request->keywordFakultas;
             $datas = Tugas::where('fakultas', 'LIKE', '%'.$keywordFakultas.'%')
-                ->paginate(4);
+                ->paginate(10);
         } else if ($request->keywordJurusan){
             $keywordJurusan = $request->keywordJurusan;
             $datas = Tugas::where('jurusan', 'LIKE', '%'.$keywordJurusan.'%')
-                ->paginate(4);
+                ->paginate(10);
         } else if ($request->keywordKategori){
             $keywordKategori = $request->keywordKategori;
             $datas = Tugas::where('kategori', 'LIKE', '%'.$keywordKategori.'%')
-                ->paginate(4);
+                ->paginate(10);
         }
         $datas->appends($request->all());
         $datas->withPath('tugas');

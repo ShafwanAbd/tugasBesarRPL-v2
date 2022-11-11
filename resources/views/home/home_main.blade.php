@@ -33,138 +33,157 @@
         </div>
 
         <h1>Tak Takut Tugas Walau Sibuk</h1>
-
+            
         <h2 class="title-jurusan">Jurusan Tugas</h2>
         <div class="jurusanTugas">
             <div class="row">
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=pendidikan Masyarakat') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/pendidikanMasyarakat.jpg">
                         </div>
-                        <h4>Informatika</h4>
+                        <h4>Pendidikan Masyarakat</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=pendidikan Bahasa Indonesia') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/pendidikanBahasaIndonesia.jpg">
+                        </div>
+                        <h4>Pendidikan Bahasa Indonesia</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=pendidikan Bahasa Inggris') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/pendidikanBahasaInggris.jpg">
+                        </div>
+                        <h4>Pendidikan Bahasa Inggris</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=pendidikan Matematika') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/pendidikanMatematika.jpg">
+                        </div>
+                        <h4>Pendidikan Matematika</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=pendidikan Biologi') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/pendidikanBiologi.jpg">
+                        </div>
+                        <h4>Pendidikan Biologi</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=kesehatan Masyarakat') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/kesehatanMasyarakat.jpg">
+                        </div>
+                        <h4>Kesehatan Masyarakat</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=gizi') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/gizi.jpg">
+                        </div>
+                        <h4>Gizi</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=ilmu Politik') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/ilmuPolitik.jpg">
+                        </div>
+                        <h4>Ilmu Politik</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=agribisnis') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/agribisnis.jpg">
+                        </div>
+                        <h4>Agribisnis</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=agroteknologi') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/agroteknologi.jpg">
+                        </div>
+                        <h4>Agroteknologi</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=ekonomi Pembangunan') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/ekonomiPembangunan.jpg">
+                        </div>
+                        <h4>Ekonomi Pembangunan</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=ekonomi Manajemen') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/ekonomiManajemen.jpg">
+                        </div>
+                        <h4>Ekonomi Manajemen</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=ekonomi Akuntansi') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/ekonomiAkuntansi.jpg">
+                        </div>
+                        <h4>EkonomiAkuntansi</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=ekonomi Keuangan Dan Perbankan') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/ekonomiKeuanganDanPerbankan.jpg">
+                        </div>
+                        <h4>Ekonomi Keuangan dan Perbankan (D3)</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordJurusan=teknik Sipil') }}">
+                        <div class="q">
+                            <img src="./img/jurusan/teknikSipil.jpg">
                         </div>
                         <h4>Teknik Sipil</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=teknik Elektro') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/teknikElektro.jpg">
                         </div>
                         <h4>Teknik Elektro</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/informatika.jpg">
                         </div>
                         <h4>Informatika</h4>
                 </a>
             </div>
         </div>
 
-        <h2 class="title-jurusan">Kategori Tugas</h2>
+        <h2 class="title-jurusan">Fakultas Tugas</h2>
         <div class="jurusanTugas">
             <div class="row">
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/informatika.jpg">
                         </div>
-                        <h4>Informatika</h4>
+                        <h4>Keguruan dan Ilmu Pendidikan</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/informatika.jpg">
                         </div>
-                        <h4>Teknik Sipil</h4>
+                        <h4>Ilmu Kesehatan</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/informatika.jpg">
                         </div>
-                        <h4>Teknik Elektro</h4>
+                        <h4>Ilmu Sosial dan Ilmu Politik</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/informatika.jpg">
                         </div>
-                        <h4>Informatika</h4>
+                        <h4>Pertanian</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/informatika.jpg">
                         </div>
-                        <h4>Informatika</h4>
+                        <h4>Ekonomi</h4>
                 </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
+                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
                         <div class="q">
-                            <img src="./img/profile.png">
+                            <img src="./img/jurusan/informatika.jpg">
                         </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=Informatika') }}">
-                        <div class="q">
-                            <img src="./img/profile.png">
-                        </div>
-                        <h4>Informatika</h4>
+                        <h4>Teknik</h4>
                 </a>
             </div>
         </div>
+
     </div>
     
 <footer>

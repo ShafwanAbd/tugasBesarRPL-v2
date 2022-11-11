@@ -25,7 +25,7 @@
             <a class="nav-link active hover-shadow" href="{{ url('home_main') }}">Home</a>
             <a class="nav-link hover-shadow dropdown" href="{{ url('tugas') }}">Tugas</a>
             <a class="nav-link hover-shadow" href="{{ url('user') }}">Profile</a>
-            <a class="hover-shadow" href="{{ url('login') }}"><img src="{{ asset('img/login_icon.png') }}"></a>
+            <a class="hover-shadow" href="{{ url('logIn') }}"><img src="{{ asset('img/login_icon.png') }}"></a>
         </div>
     </div>
 </nav>

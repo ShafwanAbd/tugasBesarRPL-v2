@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -24,6 +25,24 @@ return new class extends Migration
             $table->string('jurusan');
             $table->timestamps();
         });
+
+        DB::table('user')->insert(
+            array(
+                ['username' => 'stairways',
+                'password' => '123',
+                'fullname' => 'Muhammad Shafwan Abdullah',
+                'universitas' => 'Universitas Siliwangi',
+                'fakultas' => 'Teknik',
+                'jurusan' => 'Informatika'],
+
+                ['username' => 'zulfan123',
+                'password' => '123',
+                'fullname' => 'Zulfan Syahidan Alfarra',
+                'universitas' => 'Universitas Siliwangi',
+                'fakultas' => 'Teknik',
+                'jurusan' => 'Informatika'],
+            )
+        );
     }
 
     /**
