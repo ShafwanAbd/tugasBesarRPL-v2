@@ -12,12 +12,12 @@
     <script type="text/javascript" src="{{ asset('js/bootstrap.bundle.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>   
     <script type="text/javascript" src="{{ asset('js/javascript.js') }}"></script>   
-    <title>Home</title>
+    <title>Toko Tugas</title>
 </head>
 
 <nav class="navbar navbar-expand-lg" id="navbarRPL">
     <div class="container-fluid">
-        <a class="navbar-brand hover-shadow" href="{{ url('home') }}">IniJudulnya</a>
+        <a class="navbar-brand hover-shadow" href="{{ url('home') }}">Toko Tugas</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbarMenuRPL">

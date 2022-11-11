@@ -34,6 +34,48 @@
 
         <h1>Tak Takut Tugas Walau Sibuk</h1>
             
+        <h2 class="title-jurusan">Fakultas Tugas</h2>
+        <div class="jurusanTugas">
+            <div class="row">
+                <a class="item" href="{{ url('tugas?keywordFakultas=Keguruan dan Ilmu Pendidikan') }}">
+                        <div class="q">
+                            <img src="./img/fakultas/fkip.jpg">
+                        </div>
+                        <h4>Keguruan dan Ilmu Pendidikan</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordFakultas=Ilmu Kesehatan') }}">
+                        <div class="q">
+                            <img src="./img/fakultas/kesehatan.jpg">
+                        </div>
+                        <h4>Ilmu Kesehatan</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordFakultas=Ilmu Sosial dan Ilmu Politik') }}">
+                        <div class="q">
+                            <img src="./img/fakultas/ilpol.jpg">
+                        </div>
+                        <h4>Ilmu Sosial dan Ilmu Politik</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordFakultas=Pertanian') }}">
+                        <div class="q">
+                            <img src="./img/fakultas/pertanian.jpg">
+                        </div>
+                        <h4>Pertanian</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordFakultas=Ekonomi') }}">
+                        <div class="q">
+                            <img src="./img/fakultas/ekonomi.jpg">
+                        </div>
+                        <h4>Ekonomi</h4>
+                </a>
+                <a class="item" href="{{ url('tugas?keywordFakultas=Teknik') }}">
+                        <div class="q">
+                            <img src="./img/fakultas/teknik.jpg">
+                        </div>
+                        <h4>Teknik</h4>
+                </a>
+            </div>
+        </div>
+
         <h2 class="title-jurusan">Jurusan Tugas</h2>
         <div class="jurusanTugas">
             <div class="row">
@@ -142,52 +184,11 @@
             </div>
         </div>
 
-        <h2 class="title-jurusan">Fakultas Tugas</h2>
-        <div class="jurusanTugas">
-            <div class="row">
-                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
-                        <div class="q">
-                            <img src="./img/jurusan/informatika.jpg">
-                        </div>
-                        <h4>Keguruan dan Ilmu Pendidikan</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
-                        <div class="q">
-                            <img src="./img/jurusan/informatika.jpg">
-                        </div>
-                        <h4>Ilmu Kesehatan</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
-                        <div class="q">
-                            <img src="./img/jurusan/informatika.jpg">
-                        </div>
-                        <h4>Ilmu Sosial dan Ilmu Politik</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
-                        <div class="q">
-                            <img src="./img/jurusan/informatika.jpg">
-                        </div>
-                        <h4>Pertanian</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
-                        <div class="q">
-                            <img src="./img/jurusan/informatika.jpg">
-                        </div>
-                        <h4>Ekonomi</h4>
-                </a>
-                <a class="item" href="{{ url('tugas?keywordJurusan=informatika') }}">
-                        <div class="q">
-                            <img src="./img/jurusan/informatika.jpg">
-                        </div>
-                        <h4>Teknik</h4>
-                </a>
-            </div>
-        </div>
-
     </div>
     
 <footer>
     <div class="isi">
+        <a href="https://www.freepik.com/free-vector/qa-engineers-concept-illustration_7119020.htm#query=technic&position=0&from_view=author">Image by storyset</a> on Freepik
         <p>Created by Muhammad Shafwan Abdullah & Zulfan Syahidan Alfarra</p>
     </div>
 </footer>

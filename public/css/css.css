@@ -61,7 +61,7 @@ footer {
     width: 100%;
     margin-top: 20vh;
     height: 10vh;
-    background-color: #00577B;
+    background-color: #00577B !important;
 }
 
 footer .isi {
@@ -378,15 +378,16 @@ footer .isi {
 
 .home_main h1 {
     margin-top: 4vh;
+    margin-bottom: 30vh;
     color: #2AA7DC;
     text-align: center;
     font-weight: 650;
 }
 
 .home_main .title-jurusan {
-    margin-top: 30vh;
     color: #006E9C;
     margin-left: 14vw;
+    margin-top: 10vh;
 }
 
 .home_main .jurusanTugas {

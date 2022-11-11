@@ -9,6 +9,8 @@ use App\Http\Requests\UserRequest;
 class UserController extends Controller
 {
 
+    protected $id;
+
     public function logIn()
     {
         $model = User::all();
@@ -18,17 +20,22 @@ class UserController extends Controller
         ));
     }
 
-    public function logInPost(UserRequest $request)
+    public function logInPost(Request $request)
     {
+        if ($request->username && $request->password) {
+            
+            $datas = User::where('username', 'LIKE', $request->username)
+                ->where('password', 'LIKE', $request->password)
+                ->get();
 
-        return $request->username;
-        // $model = User::all();
+            $id = $datas[0]->id;
 
-        // if ($model->username == $request->username && $model->password == $request->password) {
-        //     return view('home.home_main');
-        // } else {
-        //     return redirect('logIn');
-        // }
+            return view('home.home_main', compact(
+                'id'
+            ));
+        } else {
+            return redirect('logIn');
+        }
 
     }
 
@@ -87,7 +94,7 @@ class UserController extends Controller
         $model = User::find($id);
 
         return view('user.profile', compact(
-            'model'
+            'model', 'id'
         ));
     }
 

@@ -15,20 +15,20 @@
     <script type="text/javascript" src="{{ asset('js/navbarHidden.js') }}"></script>
     @yield('style')
     @yield('head')
-    <title>Home</title>
+    <title>Toko Tugas</title>
 </head>
 
 <nav class="navbar navbar-expand-lg" id="navbarRPL">
     <div class="container-fluid">
-        <a class="navbar-brand hover-shadow" href="{{ url('home') }}">IniJudulnya</a>
+        <a class="navbar-brand hover-shadow" href="{{ url('home') }}">Toko Tugas</a>
     </div>
 
     <div class="collapse navbar-collapse" id="navbarMenuRPL">
         <div class="navbar-nav">
             <a class="nav-link active hover-shadow" href="{{ url('home_main') }}">Home</a>
             <a class="nav-link hover-shadow dropdown" href="{{ url('tugas') }}">Tugas</a>
-            <a class="nav-link hover-shadow" href="{{ url('user') }}">Profile</a>
-            <a class="hover-shadow" href="{{ url('logIn') }}"><img src="{{ asset('img/login_icon.png') }}"></a>
+            <a class="nav-link hover-shadow" href="{{ url('user/'.$id) }}">Profile</a>
+            <a class="hover-shadow" href="{{ url('logIn/') }}"><img src="{{ asset('img/login_icon.png') }}"></a>
         </div>
     </div>
 </nav>

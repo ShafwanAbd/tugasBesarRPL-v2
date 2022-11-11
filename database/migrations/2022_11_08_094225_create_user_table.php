@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('universitas');
             $table->string('fakultas');
             $table->string('jurusan');
+            $table->rememberToken();
             $table->timestamps();
         });
 

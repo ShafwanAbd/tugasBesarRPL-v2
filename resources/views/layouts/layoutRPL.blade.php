@@ -16,7 +16,7 @@
 <nav class="navbar is-fixed-top">
         <div class="container">
             <div class="navbar-brand">
-                <a href="" class="navbar-item has-text-white title is-size-4 mb-0">judulnyaIni</a>
+                <a href="" class="navbar-item has-text-white title is-size-4 mb-0">Toko Tugas</a>
                 <a class="navbar-burger mb-0" id="burger">
                     <span class="has-text-white"></span>
                     <span class="has-text-white"></span>
