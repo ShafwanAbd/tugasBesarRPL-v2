@@ -33,6 +33,7 @@
 }
 
 #navbarMenuRPL {
+    z-index: 1;
     float: right;
 }
 
@@ -593,6 +594,7 @@ footer .isi {
 }
 
 .cariTugas .right-side .item img {
+    border-radius: 25px;
     margin: 1vw;
     width: 10vw;
     object-fit: cover;

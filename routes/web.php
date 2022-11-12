@@ -19,7 +19,7 @@ Route::get('/home', [HomeController::class, 'home']);
 Route::get('/home_main', [HomeController::class, 'home_main']);
 
 
-Route::get('/user/none', [HomeController::class, 'home_main']);
+Route::get('/user/none', [UserController::class, 'logIn']);
 
 Route::resource('user', UserController::class);
 Route::resource('tugas', TugasController::class);
